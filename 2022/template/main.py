@@ -32,7 +32,7 @@ def _parse_args(argv: Sequence[str] | None = None) -> ap.Namespace:
 
 
 def _configure_logging(debug: bool) -> None:
-    log_path = Path("../../logs")
+    log_path = Path("./logs")
     log_path.mkdir(parents=True, exist_ok=True)
     log_file_path = log_path.joinpath(f"log_day_{_DAY_NUMBER:02}.log").resolve()
 
